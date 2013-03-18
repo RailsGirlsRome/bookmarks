@@ -1,4 +1,6 @@
 class BookmarksController < ApplicationController
+  before_filter :authenticate_user!, :except => [:index, :show]
+
   # GET /bookmarks
   # GET /bookmarks.json
   def index
@@ -24,7 +26,7 @@ class BookmarksController < ApplicationController
   # GET /bookmarks/new
   # GET /bookmarks/new.json
   def new
-    @bookmark = Bookmark.new
+    @bookmark = current_user.bookmarks.new
 
     respond_to do |format|
       format.html # new.html.erb
@@ -34,13 +36,13 @@ class BookmarksController < ApplicationController
 
   # GET /bookmarks/1/edit
   def edit
-    @bookmark = Bookmark.find(params[:id])
+    @bookmark = current_user.bookmarks.find(params[:id])
   end
 
   # POST /bookmarks
   # POST /bookmarks.json
   def create
-    @bookmark = Bookmark.new(params[:bookmark])
+    @bookmark = current_user.bookmarks.new(params[:bookmark])
 
     respond_to do |format|
       if @bookmark.save
@@ -56,7 +58,7 @@ class BookmarksController < ApplicationController
   # PUT /bookmarks/1
   # PUT /bookmarks/1.json
   def update
-    @bookmark = Bookmark.find(params[:id])
+    @bookmark = current_user.bookmarks.find(params[:id])
 
     respond_to do |format|
       if @bookmark.update_attributes(params[:bookmark])
@@ -72,7 +74,7 @@ class BookmarksController < ApplicationController
   # DELETE /bookmarks/1
   # DELETE /bookmarks/1.json
   def destroy
-    @bookmark = Bookmark.find(params[:id])
+    @bookmark = current_user.bookmarks.find(params[:id])
     @bookmark.destroy
 
     respond_to do |format|

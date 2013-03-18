@@ -46,6 +46,7 @@ rails generate devise User
   > rake db:migrate
 
 * add validations and relations between User and Bookmark
+* require User authentication to manage Bookmarks
 
 
 == Push to Heroku
