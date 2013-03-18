@@ -38,6 +38,14 @@ rails generate devise User
   > rails c
   > User.all
 
+== Add Bookmarks resource
+
+* generate scaffold for Bookmark resource
+
+  > rails g scaffold bookmark title url user_id:integer
+  > rake db:migrate
+
+
 == Push to Heroku
   * heroku apps:create rgr13-bookmarks-<developer name>
   * ssh keygen -t rsa
