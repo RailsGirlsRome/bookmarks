@@ -52,6 +52,7 @@ rails generate devise User
 == Better views
 
 * integrate Twitter Bootstrap
+* add prettier styles and remove css scaffold
 
 
 == Push to Heroku
