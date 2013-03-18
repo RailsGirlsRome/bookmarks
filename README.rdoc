@@ -45,6 +45,8 @@ rails generate devise User
   > rails g scaffold bookmark title url user_id:integer
   > rake db:migrate
 
+* add validations and relations between User and Bookmark
+
 
 == Push to Heroku
   * heroku apps:create rgr13-bookmarks-<developer name>
