@@ -6,7 +6,7 @@ Bookmarks::Application.routes.draw do
 
 
   # dummy route, not yet existent
-  root to: "home#index"
+  root to: "welcome#index"
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
