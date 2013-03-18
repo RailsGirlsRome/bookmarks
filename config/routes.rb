@@ -1,6 +1,6 @@
 Bookmarks::Application.routes.draw do
   resources :bookmarks
-
+  resources :profiles, :only => [:index, :show]
 
   devise_for :users
 

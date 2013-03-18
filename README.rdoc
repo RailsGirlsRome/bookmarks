@@ -58,6 +58,7 @@ rails generate devise User
 
 * add home page with all bookmarks
 * show User's bookmarks in bookmarks index page (aka myBookmarks)
+* add public User profile
 
 
 == Push to Heroku

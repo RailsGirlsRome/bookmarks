@@ -1,0 +1,17 @@
+<h1>Bookmarks shared by our Users</h1>
+
+<table class="table table-striped">
+  <tr>
+    <th>User</th>
+    <th># Bookmarks</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= link_to user.username, profile_path(user) %></td>
+    <td><%= user.bookmarks.count %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Back to Index', root_path, :class => 'btn' %>
