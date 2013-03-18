@@ -47,6 +47,7 @@ rails generate devise User
 
 * add validations and relations between User and Bookmark
 * require User authentication to manage Bookmarks
+* order Bookmarks by descending creation date
 
 
 == Push to Heroku
