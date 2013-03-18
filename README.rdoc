@@ -49,6 +49,10 @@ rails generate devise User
 * require User authentication to manage Bookmarks
 * order Bookmarks by descending creation date
 
+== Better views
+
+* integrate Twitter Bootstrap
+
 
 == Push to Heroku
   * heroku apps:create rgr13-bookmarks-<developer name>
