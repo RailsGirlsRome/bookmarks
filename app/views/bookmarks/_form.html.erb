@@ -15,20 +15,24 @@
   <div class="control-group">
     <%= f.label :title, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :title %>
+      <%= f.text_field :title, :class => 'input-xxlarge' %>
     </div>
   </div>
 
   <div class="control-group">
     <%= f.label :url, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :url %>
+      <%= f.text_field :url, :class => 'input-xxlarge' %>
     </div>
   </div>
 
   <div class="control-group">
     <div class="controls">
       <button type="submit" class="btn">Submit</button>
+      <% unless f.object.new_record? %>
+        <%= link_to 'Show', @bookmark, :class => 'btn' %>
+      <% end %>
+      <%= link_to 'Back', bookmarks_path, :class => 'btn' %>
     </div>
   </div>
 <% end %>
