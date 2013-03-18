@@ -54,6 +54,11 @@ rails generate devise User
 * integrate Twitter Bootstrap
 * add prettier styles and remove css scaffold
 
+== Improvements
+
+* add home page with all bookmarks
+* show User's bookmarks in bookmarks index page (aka myBookmarks)
+
 
 == Push to Heroku
   * heroku apps:create rgr13-bookmarks-<developer name>

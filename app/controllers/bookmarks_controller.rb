@@ -1,10 +1,10 @@
 class BookmarksController < ApplicationController
-  before_filter :authenticate_user!, :except => [:index, :show]
+  before_filter :authenticate_user!, :except => [:show]
 
   # GET /bookmarks
   # GET /bookmarks.json
   def index
-    @bookmarks = Bookmark.order('created_at desc').all
+    @bookmarks = current_user.bookmarks.order('created_at desc').all
 
     respond_to do |format|
       format.html # index.html.erb
