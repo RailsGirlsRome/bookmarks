@@ -60,6 +60,9 @@ rails generate devise User
 * show User's bookmarks in bookmarks index page (aka myB❤❤kmarx)
 * add public User profile
 * remove show action for Bookmark
+* add pagination
+  * add kaminari gem
+    > rails generate kaminari:config
 
 
 == DIY
