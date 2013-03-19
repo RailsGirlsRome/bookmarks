@@ -64,6 +64,8 @@ rails generate devise User
   * add kaminari gem
     > rails generate kaminari:config
   * add pagination to index pages
+  * adapt pagination to bootstrap
+    > rails generate kaminari:views bootstrap
 
 
 == DIY
