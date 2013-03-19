@@ -16,7 +16,7 @@
 
 ---------------------------------------------
 
-== Welcome to the Bookmarks Rails Girls app!
+== Welcome to the B❤❤kmarx Rails Girls app!
 
 Work in progress below...
 
@@ -38,7 +38,7 @@ rails generate devise User
   > rails c
   > User.all
 
-== Add Bookmarks resource
+== Add B❤❤kmarx resource
 
 * generate scaffold for Bookmark resource
 
@@ -46,8 +46,8 @@ rails generate devise User
   > rake db:migrate
 
 * add validations and relations between User and Bookmark
-* require User authentication to manage Bookmarks
-* order Bookmarks by descending creation date
+* require User authentication to manage B❤❤kmarx
+* order B❤❤kmarx by descending creation date
 
 == Better views
 
@@ -57,8 +57,13 @@ rails generate devise User
 == Improvements
 
 * add home page with all bookmarks
-* show User's bookmarks in bookmarks index page (aka myBookmarks)
+* show User's bookmarks in bookmarks index page (aka myB❤❤kmarx)
 * add public User profile
+
+
+== DIY
+
+* use username instead of id in public User profile url
 
 
 == Push to Heroku
