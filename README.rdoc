@@ -38,7 +38,7 @@ rails generate devise User
   > rails c
   > User.all
 
-== Add B❤❤kmarx resource
+== Add Bookmark resource
 
 * generate scaffold for Bookmark resource
 
@@ -46,8 +46,8 @@ rails generate devise User
   > rake db:migrate
 
 * add validations and relations between User and Bookmark
-* require User authentication to manage B❤❤kmarx
-* order B❤❤kmarx by descending creation date
+* require User authentication to manage Bookmark
+* order Bookmark by descending creation date
 
 == Better views
 
@@ -59,6 +59,7 @@ rails generate devise User
 * add home page with all bookmarks
 * show User's bookmarks in bookmarks index page (aka myB❤❤kmarx)
 * add public User profile
+* remove show action for Bookmark
 
 
 == DIY

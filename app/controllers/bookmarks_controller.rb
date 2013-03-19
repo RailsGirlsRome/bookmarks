@@ -1,5 +1,5 @@
 class BookmarksController < ApplicationController
-  before_filter :authenticate_user!, :except => [:show]
+  before_filter :authenticate_user!
 
   # GET /bookmarks
   # GET /bookmarks.json
@@ -9,17 +9,6 @@ class BookmarksController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @bookmarks }
-    end
-  end
-
-  # GET /bookmarks/1
-  # GET /bookmarks/1.json
-  def show
-    @bookmark = Bookmark.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @bookmark }
     end
   end
 
