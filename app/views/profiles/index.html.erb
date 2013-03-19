@@ -1,9 +1,9 @@
-<h1>B❤❤kmarx shared by our Users</h1>
+<h1>Bookmarks shared by our Users</h1>
 
 <table class="table table-striped">
   <tr>
     <th>User</th>
-    <th># B❤❤kmarx</th>
+    <th># Bookmarks</th>
   </tr>
 
 <% @users.each do |user| %>
@@ -13,5 +13,6 @@
   </tr>
 <% end %>
 </table>
+<%= paginate @users %>
 
 <%= link_to 'Back to Index', root_path, :class => 'btn' %>

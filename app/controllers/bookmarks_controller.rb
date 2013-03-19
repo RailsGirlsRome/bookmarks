@@ -4,7 +4,7 @@ class BookmarksController < ApplicationController
   # GET /bookmarks
   # GET /bookmarks.json
   def index
-    @bookmarks = current_user.bookmarks.order('created_at desc')
+    @bookmarks = current_user.bookmarks.order('created_at desc').page(params[:page])
 
     respond_to do |format|
       format.html # index.html.erb

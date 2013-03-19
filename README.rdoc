@@ -63,6 +63,7 @@ rails generate devise User
 * add pagination
   * add kaminari gem
     > rails generate kaminari:config
+  * add pagination to index pages
 
 
 == DIY
