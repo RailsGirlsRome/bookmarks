@@ -68,6 +68,10 @@ rails generate devise User
     > rails generate kaminari:views bootstrap
 
 
+== Deploy
+
+* add postgresql gem for production
+
 == DIY
 
 * use username instead of id in public User profile url
