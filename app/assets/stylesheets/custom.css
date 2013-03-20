@@ -45,6 +45,7 @@ body {
 .navbar .navbar-inner {
   padding: 0;
 }
+
 .navbar .nav {
   margin: 0;
   display: table;
@@ -61,6 +62,11 @@ body {
   border-left: 1px solid rgba(255,255,255,.75);
   border-right: 1px solid rgba(0,0,0,.1);
 }
+
+.navbar .nav li a:hover {
+  color: #bf1e1f;
+}
+
 .navbar .nav li:first-child a {
   border-left: 0;
   border-radius: 3px 0 0 3px;
@@ -75,7 +81,7 @@ a, a:hover {
 }
 
 .logo, a.logo, a.logo a:hover {
-  color: #333;
+  color: #2b2b2b;
   text-decoration: none;
 }
 
