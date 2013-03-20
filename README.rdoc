@@ -75,6 +75,12 @@ rails generate devise User
   * add Procfile: web: bundle exec rails server puma -p $PORT -e $RACK_ENV
   * add .env: set RACK_ENV and RAILS_ENV to development
 
+* prevent environment to be loaded during assets precompile:
+  -  add "config.assets.initialize_on_precompile = false" to config/application.rb
+
+* create heroku app:
+  > heroku create rgr13-bookmarks
+
 
 == DIY
 
