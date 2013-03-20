@@ -70,6 +70,10 @@ body {
   border-radius: 0 3px 3px 0;
 }
 
+a, a:hover {
+  color: #a11a1a;
+}
+
 .logo, a.logo, a.logo a:hover {
   color: #333;
   text-decoration: none;
@@ -80,6 +84,3 @@ body {
   font-size: 95%;
 }
 
-a, a:hover {
-  color: #a11a1a;
-}
