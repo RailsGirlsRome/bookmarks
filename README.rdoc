@@ -84,6 +84,7 @@ rails generate devise User
 
 == DIY
 
+* improve html and css
 * use username instead of id in public User profile url
 
 
