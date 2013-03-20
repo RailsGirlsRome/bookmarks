@@ -1,24 +1,47 @@
-<h1>Share your B❤❤kmarx!</h1>
-
-<table class="table table-striped">
-  <tr>
-    <th>Title</th>
-    <th>Url</th>
-    <th>Submitted by</th>
-  </tr>
-
-<% @bookmarks.each do |bookmark| %>
-  <tr>
-    <td><%= bookmark.title %></td>
-    <td><%= link_to bookmark.url, bookmark.url %></td>
-    <td><%= link_to bookmark.user.username, profile_path(bookmark.user) %></td>
-  </tr>
-<% end %>
-</table>
-<%= paginate @bookmarks %>
-
-<br />
-
 <% if current_user %>
-  <%= link_to 'New Bookmark', new_bookmark_path, :class => 'btn' %>
+  <h1 class='logo'>Latest B<span>❤❤</span>kmarx</h1>
+  <table class="table table-striped">
+    <tr>
+      <th>Title</th>
+      <th>Url</th>
+      <th>Submitted by</th>
+    </tr>
+
+    <% @bookmarks.each do |bookmark| %>
+      <tr>
+        <td><%= bookmark.title %></td>
+        <td><%= link_to bookmark.url, bookmark.url %></td>
+        <td><%= link_to bookmark.user.username, profile_path(bookmark.user) %></td>
+      </tr>
+    <% end %>
+  </table>
+  <%= paginate @bookmarks %>
+  <br />
+<% else %>
+  <div class="jumbotron">
+    <h1 class='logo'>Share your B<span>❤❤</span>kmarx!</h1>
+    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    <%= link_to "Get started today", new_user_registration_path, :class => "btn btn-lare btn-danger" %>
+  </div>
+
+  <hr>
+
+  <div class="row-fluid">
+    <div class="span4">
+      <h3>Rails Girls</h3>
+      <p>This event aims to give tools for girls and women to build their ideas. You learn designing, prototyping and coding by doing it with help from our coaches.</p>
+      <p><a class="" href="http://railsgirls.com" target="_blank">Learn more</a></p>
+    </div>
+    <div class="span4">
+      <h3>Rome</h3>
+      <p>On March 22-23 2013, Rails Girls came to the Eternal City! During the free one-and-a-half-day workshop we dived into the magical world of Ruby on Rails. This website is one of the apps we've built togheter</p>
+      <p><a class="" href="http://railsgirls.com/rome" target="_blank">Watch more</a></p>
+    </div>
+    <div class="span4">
+      <h3 class='logo'>About B<span>❤❤</span>kmarx</h3>
+      <p>It is a simple bookmark sharing app developed by:</p>
+      <p>YOUR NAMES HERE :-)</p>
+    </div>
+  </div>
 <% end %>
+
