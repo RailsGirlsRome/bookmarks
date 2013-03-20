@@ -3,13 +3,16 @@
   <table class="table table-bordered">
     <tr>
       <th>Url</th>
-      <th>Submitted by</th>
+      <th>User</th>
+      <th>Forks</th>
+
     </tr>
 
     <% @bookmarks.each do |bookmark| %>
       <tr>
         <td><%= link_to bookmark.title, bookmark.url %></td>
         <td><%= link_to bookmark.user.username, profile_path(bookmark.user) %></td>
+        <td><%= link_to 'Fork!', fork_bookmark_path(bookmark) %></td>
       </tr>
     <% end %>
   </table>

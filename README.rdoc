@@ -90,6 +90,7 @@ rails generate devise User
 * use username instead of id in public User profile url
 * handle profile not found error (redirect to profiles path with an alert notice)
 * add prettier tables to show Bookmarks
+* fork Bookmarks
 
 * add tagging (??)
 

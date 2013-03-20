@@ -1,15 +1,17 @@
-<h1>B❤❤kmarx shared by <%= link_to @user.username, profile_path(@user) %></h1>
+<h1>Bookmarks shared by <%= link_to @user.username, profile_path(@user) %></h1>
 
 <table class="table table-striped">
   <tr>
     <th>Title</th>
     <th>Url</th>
+    <th>Forks</th>
   </tr>
 
 <% @bookmarks.each do |bookmark| %>
   <tr>
     <td><%= bookmark.title %></td>
     <td><%= link_to bookmark.url, bookmark.url %></td>
+    <td><%= link_to 'Fork!', fork_bookmark_path(bookmark) %></td>
   </tr>
 <% end %>
 </table>

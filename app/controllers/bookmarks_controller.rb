@@ -71,4 +71,20 @@ class BookmarksController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def fork
+    bookmark = Bookmark.find(params[:id])
+    if bookmark.user_id != current_user.id
+      current_user.bookmarks.create do |b|
+        b.title = bookmark.title
+        b.url = bookmark.url
+      end
+
+      flash[:notice] = 'Bookmark was successfully forked.'
+    else
+      flash[:alert] = 'Bookmark is already yours.'
+    end
+    redirect_to bookmarks_path
+  end
+
 end

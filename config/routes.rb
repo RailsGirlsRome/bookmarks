@@ -1,5 +1,8 @@
 Bookmarks::Application.routes.draw do
-  resources :bookmarks, :except => [:show]
+  resources :bookmarks, :except => [:show] do
+    get :fork, :on => :member
+  end
+
   resources :profiles, :only => [:index, :show]
 
   devise_for :users
