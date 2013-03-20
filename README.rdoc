@@ -71,6 +71,10 @@ rails generate devise User
 == Deploy
 
 * add postgresql gem for production
+* setup Puma web server
+  * add Procfile: web: bundle exec rails server puma -p $PORT -e $RACK_ENV
+  * add .env: set RACK_ENV and RAILS_ENV to development
+
 
 == DIY
 

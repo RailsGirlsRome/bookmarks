@@ -18,6 +18,8 @@ end
 
 gem 'jquery-rails'
 gem 'kaminari'
+gem 'foreman'
+gem 'puma'
 
 group :production do
   gem 'pg'
