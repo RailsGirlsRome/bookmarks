@@ -1,8 +1,7 @@
 <h1 class='logo'>My B<span>❤❤</span>kmarx</h1>
 
-<table class="table table-striped">
+<table class="table table-striped table-bordered">
   <tr>
-    <th>Title</th>
     <th>Url</th>
     <th></th>
     <th></th>
@@ -10,8 +9,7 @@
 
 <% @bookmarks.each do |bookmark| %>
   <tr>
-    <td><%= bookmark.title %></td>
-    <td><%= link_to bookmark.url, bookmark.url %></td>
+    <td><%= link_to bookmark.title, bookmark.url %></td>
     <td><%= link_to 'Edit', edit_bookmark_path(bookmark) %></td>
     <td><%= link_to 'Destroy', bookmark, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>

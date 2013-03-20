@@ -1,16 +1,14 @@
 <% if current_user %>
   <h1 class='logo'>Latest B<span>❤❤</span>kmarx</h1>
-  <table class="table table-striped">
+  <table class="table table-bordered">
     <tr>
-      <th>Title</th>
       <th>Url</th>
       <th>Submitted by</th>
     </tr>
 
     <% @bookmarks.each do |bookmark| %>
       <tr>
-        <td><%= bookmark.title %></td>
-        <td><%= link_to bookmark.url, bookmark.url %></td>
+        <td><%= link_to bookmark.title, bookmark.url %></td>
         <td><%= link_to bookmark.user.username, profile_path(bookmark.user) %></td>
       </tr>
     <% end %>
