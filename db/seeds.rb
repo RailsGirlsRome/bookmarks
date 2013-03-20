@@ -17,6 +17,7 @@ bookmarks = [
   {:title => 'Learn to program: Imparare a programmare partendo da zero', :url => 'http://corsorubyonrails.com/imparare-a-programmare' },
   {:title => 'Ruby On Rails API docs', :url => 'http://api.rubyonrails.org/'},
   {:title => 'Ruby On Rails official guides', :url => 'http://guides.rubyonrails.org'},
+  {:title => 'Twitter Bootstrap', :url => 'http://twitter.github.com/bootstrap/index.html'}
 ]
 
 bookmarks.each do |bookmark|
