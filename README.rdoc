@@ -86,9 +86,9 @@ rails generate devise User
 
 == DIY
 
-* improve html and css (show finished work)
 * use username instead of id in public User profile url
-* add tagging:
+* improve html and css (show finished work)
+* add tagging (??)
 
 
 
