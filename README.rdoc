@@ -88,6 +88,7 @@ rails generate devise User
 
 * improve html and css (show finished work)
 * use username instead of id in public User profile url
+* handle profile not found error (redirect to profiles path with an alert notice)
 
 * add tagging (??)
 

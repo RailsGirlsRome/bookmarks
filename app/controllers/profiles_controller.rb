@@ -4,7 +4,11 @@ class ProfilesController < ApplicationController
   end
 
   def show
-    @user = User.where(:username => params[:id]).first
-    @bookmarks = @user.bookmarks
+    if @user = User.where(:username => params[:id]).first
+      @bookmarks = @user.bookmarks
+    else
+      flash[:alert] = 'Profile not found :-('
+      redirect_to profiles_path
+    end
   end
 end
