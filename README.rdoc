@@ -1,4 +1,3 @@
-
                    ***     ***
                  **   ** **   **
                 *       *       *
@@ -18,7 +17,9 @@
 
 == Welcome to the B❤❤kmarx Rails Girls app!
 
-Work in progress below...
+We're going to develop a simple bookmarks sharing app. People will be able to signup/signin, add their bookmarks and fork others :-)
+
+See finished work in action: http://rgr13-bookmarks.herokuapp.com.
 
 == Setup Devise
 
