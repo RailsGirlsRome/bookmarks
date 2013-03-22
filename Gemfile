@@ -5,6 +5,8 @@ gem 'devise'
 
 # Console
 gem 'pry-rails'
+gem 'awesome_print'
+gem 'hirb'
 
 # Gems used only for assets and not required
 # in production environments by default.
